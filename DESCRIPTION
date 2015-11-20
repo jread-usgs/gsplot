@@ -16,7 +16,8 @@ Authors@R: c( person("Jordan", "Read", role = "aut",
     person("Lindsay","Carr", role="aut",
     email = "lcarr@usgs.gov"))
 License: CC0
-Description: Workflow and plotting style defaults created for the U.S. Geological Survey.
+Description: Workflow and plotting style defaults created for the U.S.
+    Geological Survey.
 Depends:
     R (>= 3.0)
 Copyright: This software is in the public domain because it contains materials
@@ -39,3 +40,4 @@ VignetteBuilder: knitr
 BuildVignettes: true
 LazyLoad: yes
 LazyData: yes
+RoxygenNote: 5.0.1

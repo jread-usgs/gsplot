@@ -44,7 +44,7 @@ config <- function(type, ...){
                     "mtext","grid","segments",
                     "error_bar","arrows","bgCol","callouts",
                     "rect", "polygon", "symbols", 
-                    "curve", "orderToPlot")
+                    "curve", "orderToPlot","hovertext")
   
   type <- match.arg(type, choices = allowedTypes)
   
@@ -71,6 +71,7 @@ config <- function(type, ...){
                          error_bar=c('x', 'y', '...', 'y.high', 'y.low', 'x.high', 'x.low', 'epsilon'),
                          bgCol=names(formals(bgCol.default)),
                          callouts=names(formals(callouts.default)),
+                         hovertext=names(formals(hovertext.default)),
                          rect=names(formals(graphics::rect)),
                          polygon=names(formals(graphics::polygon)),
                          symbols=names(formals(graphics::symbols)),

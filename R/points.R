@@ -47,8 +47,8 @@ points <- function(object, ...) {
 
 points.gsplot <- function(object, ..., legend.name=NULL, side=c(1,2), hover.name=NULL){
   fun.name <- 'points'
-  object <- set_window_args(object, fun.name=fun.name, ..., hover.name=hover.name, legend.name=legend.name, side=side, def.funs = c(graphics::plot.xy, graphics::points.default))
-  object <- set_legend_args(object, fun.name=fun.name, ..., hover.name=hover.name, legend.name=legend.name)
+  object <- set_window_args(object, fun.name=fun.name, ..., legend.name=legend.name, side=side, def.funs = c(graphics::plot.xy, graphics::points.default))
+  object <- set_legend_args(object, fun.name=fun.name, ..., legend.name=legend.name)
 }
 
 hover.gsplot <- function(object){

@@ -62,7 +62,8 @@ print.gsplot <- function(x, ...){
 
     # -- initial view --
     if(i == view.index[1]){
-      bgCol(bg.arg)
+      if (!is.null(bg.arg))
+        bgCol(bg.arg)
       title(title.arg)
     }
     

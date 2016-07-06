@@ -66,7 +66,14 @@
 }
 
 #' @export
+print.gsplot_limit <- function(x, ...) {
+  class(x) <- class(x)[!class(x) %in% 'gsplot_limit']
+  NextMethod(generic='print', object=x, ...)
+}
+
+#' @export
 `[<-.gsplot_limit` <- function(x, i, j, value){
   # do something special here?
+  NextMethod()
 }
 
